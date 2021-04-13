@@ -29,7 +29,7 @@ function addEmp(event) {
     Employee.prototype.setlocal();
     renderTable();
 }
-renderTable();
+
 function renderTable() {
     table.innerHTML='';
     let tr0=document.createElement('tr');
@@ -64,7 +64,7 @@ function renderTable() {
         salaryTd.textContent=Employee.el[i].salary;
         tot+=Employee.el[i].salary;
      }
-     totalsp.textContent=tot;
+     totalsp.textContent=`total:${tot}`;
 }
 
 
