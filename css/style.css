@@ -25,11 +25,27 @@ div{
     display: inline-block;
 
 }
-h1{
+h1,p{
     color: #fff;
+    text-align: center;
 }
+label{
+    color: #fff;}
 input,select,label{
-    color: #fff;
-    width: 8rem;
+   margin: 0.5rem;
+    width: 20rem;
 
 }
+table {
+    width: 96%;
+    height: 96%;}
+
+    td,th{
+        padding: 1rem;
+        border: groove 2px  #fff;
+        color: #fff;
+    }
+    footer{
+        padding-top: 2re;
+
+    }

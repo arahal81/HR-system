@@ -1,6 +1,6 @@
 let eForm=document.getElementById('eForm');
 let table=document.getElementById('table');
-let totalsp=document.getElementById('total')
+let totalsp=document.getElementById('total');
 eForm.addEventListener('submit',addEmp);
 let tot=0;
 Employee.el=JSON.parse(localStorage.getItem('empL'))||[];
@@ -17,6 +17,7 @@ function getrandomSalary() {
 
 
 Employee.prototype.setlocal=function() {
+
 localStorage.setItem('empL',JSON.stringify(Employee.el))
     
 }
@@ -24,12 +25,27 @@ function addEmp(event) {
     console.log(event);
     event.preventDefault();
    
-    new Employee(event.target.Name.Value,event.target.Email.Value,event.target.Dep.Value);
+    new Employee(event.target.Name.value,event.target.Email.value,event.target.Dep.value);
     Employee.prototype.setlocal();
     renderTable();
 }
 renderTable();
 function renderTable() {
+    table.innerHTML='';
+    let tr0=document.createElement('tr');
+    table.appendChild(tr0);
+    let thName=document.createElement('th');
+    tr0.appendChild(thName);
+    thName.textContent="Name";
+    let thEmail=document.createElement('th');
+    tr0.appendChild(thEmail);
+    thEmail.textContent="Email";
+    let thDep=document.createElement('th');
+    tr0.appendChild(thDep);
+    thDep.textContent="Department";
+    let thSal=document.createElement('th');
+    tr0.appendChild(thSal);
+    thSal.textContent="Salary";
     for(let i in Employee.el)
     {
         let tr=document.createElement('tr');
