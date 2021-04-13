@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="head">HR system</h1>
+    </header>
+    <main>
+        <div>
+            <h1>Add Employee</h1>
+            <br>
+            <form id="eForm">
+                <label for="Name">Name</label><br>
+                <input type="text" name="Name" id="Name"> <br>
+                <label for="Email">Email</label><br>
+                <input type="text" name="Email" id="Email"><br>
+                <label for="Dep">Department</label><br>
+                <select name="Dep" id="Dep">
+                    <option value="Call-Center">Call-Center</option>
+                    <option value="Information-Technology">Information-Technology</option>
+                    <option value="Human-Resources">Human-Resources</option>
+                </select><br>
+                <input type="submit" value="submit">
+
+            </form>
+        </div>
+        <div id="tabledev">
+            <table id="table">
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Department
+                    </th>
+                    <th>Salary</th>
+                </tr>
+            </table>
+            <p>Total= <span id="total"></span>  </p>
+        </div>
+    </main>
+    <footer>
+        <h1>&copyASAC 201d19 team</h1>
+    </footer>
+<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+    background-image: url(/bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{text-align: center;
+    background-color: #00000096;
+    height: 7rem;  
+}
+#head{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    color: #fff    ;
+    padding-top: 2rem;
+}
+div{
+    padding: 0.5rem;
+    background-color: #00000096;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+    border: solid 1px #00000096;
+    display: inline-block;
+
+}
+h1{
+    color: #fff;
+}
+input,select,label{
+    color: #fff;
+    width: 8rem;
+
+}
